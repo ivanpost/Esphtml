@@ -1,0 +1,157 @@
+// файл обнуляющих стилей!
+@import "_header";
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	max-width: 700px;
+	max-height: 900px;
+	margin: 0 auto;
+	
+
+	@media (max-width:970px) {
+		font-size: 18px;		
+	}
+
+	@media (max-width:768px) {
+		font-size: 16px;		
+	}
+	
+	@media (max-width:320px) {
+		font-size: 12px;		
+	}
+
+}
+
+.page{
+	height: 100%;
+	
+	&__row{
+		//border: 2px solid white;
+		display:flex;
+		flex-direction:column;
+		height: 100%;
+	}
+
+	&__head{
+		display: flex;
+		justify-content:space-between;
+		align-items:center;
+		background-color: #006400;
+		color: #fff;
+		padding: 5px 0 5px 0;
+	}
+
+	&__body{
+		display:flex;
+		flex-direction:column;
+		flex: 1 1 auto;
+	}
+
+	&__footer{
+		height: 15px;
+		background-color: green;
+	}
+
+}
+
+.mbody {
+	//border: 2px solid white;
+	height: 100%;
+	background-color:   #2F4F4F;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	&__row{
+		display: flex;
+		justify-content: flex-start;
+		padding: 5px;
+		//border: 1px solid #006400;
+		margin: 5px;
+	}
+
+	&__column1{
+		width: 33%;
+	}
+
+	&__column2{
+		width: 66%;
+	}
+
+}
+
+a {
+	text-align: center;
+	text-decoration: underline;
+	color: white;
+	padding: 2%;
+
+	&:hover{
+		color: aqua;
+	}
+	&:active{
+		color: yellow;
+	}
+}
+
+input {
+	width: 70%;
+	color: #fff;
+	font-size: 100%;
+	font-weight: 700;
+	padding: 6px;
+	background-color: inherit;
+	text-align: center;
+	align-items: stretch;
+	border: 1px solid #555;
+	width: 80%;
+	margin-left: 10%;
+}
+
+li {
+	line-height: 150%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+button{
+	border: none;
+	font-size: 100%;
+	font-weight: 700;
+	border-radius: 6px;
+	background: #4B0082;
+	cursor: pointer;
+	color: white;
+	margin: 3%;
+	height: 30%;
+	width: 60%;
+	padding: 10px;
+
+	&:hover{
+		background: #006400;
+	}
+	&:active{
+		box-shadow: inset 3px 3px 10px 4px #7CFC00;
+	}
+}
+
+.titlev{
+	color: white;
+	line-height: 120%;
+	white-space: nowrap;
+	border-radius: 2px;
+	padding: 10px;
+	margin: 3%;
+	background-color: #2E8B57;
+}
+
+.titlew{
+	color: white;
+	white-space: nowrap;
+	margin: 2%;
+	//background-color:  #2F4F4F;
+	align-content: center;
+	//border: 1px solid #006400;
+	word-wrap: break-word;
+}
